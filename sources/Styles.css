@@ -1,0 +1,12 @@
+body{    
+    font-family: 'Gentium Basic', serif;
+    font-style: normal;
+    color: #403b3b;
+}
+header{
+    background-color: #FFE01B;
+}
+#boton{
+    color: aliceblue;
+    text-align: center;
+}
