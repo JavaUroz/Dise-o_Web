@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+.nav-container ul, li{
+    display:flex;
+    list-style: none;
+    padding: 8px;
+    float: right;
+}
+img.redimension-menu{
+    width: 20px;
+    height: 20px;
+}
+
+.seccion-logo{
+    display: flex;
+    margin: 0px auto;
+}
+.logo{
+    width: 200px;
+}
+.busqueda{
+    display: flex;
+
+}
+.botones{
+    display: flex;
+
+}
