@@ -62,7 +62,7 @@ img.redimension-menu{
     padding: 15px;
     padding-left: 40px;
     padding-right: 40px;
-    width: 40%;
+    width: 50%;
 }
 input.image-buscar {
 	width: 12px;
@@ -89,4 +89,9 @@ input.image-voice {
     border: none;
     margin: 5px;
     padding: 10px;
+}
+.div-pais{
+    font-size: 15px;
+    padding: 10px;
+    margin: 20px;
 }
