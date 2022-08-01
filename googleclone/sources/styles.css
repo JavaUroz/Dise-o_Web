@@ -5,17 +5,23 @@
     text-decoration: none;
     color: black;
 }
-
+a:hover{
+    text-decoration: underline;
+}
 body{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 13px;
-
 }
-
+button:hover{
+    border-style: solid;    
+    border-color: rgb(194, 194, 194)
+}
 div{
     width: 100%;
 }
-
+input{
+    all:unset
+}
 .nav-container ul, li{
     display: flex;    
     list-style: none;
@@ -24,17 +30,14 @@ div{
     flex-direction: row;
     float: right;
 }
-
 img.redimension-menu{
     width: 20px;
     height: 20px;
 }
-
 .img-profile{
     size: 25px;
     border-radius: 50%;
 }
-
 .seccion-logo{
     display: flex;
     padding-top: 15%;
@@ -57,12 +60,16 @@ img.redimension-menu{
 
 .buscador{
     border: 1px;
-    box-shadow: 1px 1px 5px black;
+    border-style: solid;
+    border-color: grey;    
     border-radius: 25px;
     padding: 15px;
     padding-left: 40px;
     padding-right: 40px;
     width: 50%;
+}
+.buscador:hover, :focus{
+    box-shadow: 1px 1px 5px black;
 }
 input.image-buscar {
 	width: 12px;
@@ -88,12 +95,27 @@ footer{
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    margin-top: 15px;
+    
 }
-.botones{
+.boton-buscarcongoogle{
     font-size: 15px;
     border: none;
-    margin: 5px;
+    margin-right: 18%;
     padding: 10px;
+    border-radius: 5px;
+    position:absolute;
+       
+}
+.boton-mesientoconsuerte{
+    font-size: 15px;
+    border: none;
+    /*margin: 5px;*/
+    margin-right: -18%;
+    padding: 10px;
+    border-radius: 5px;
+    position:absolute;
+       
 }
 .div-pais{
     font-size: 15px;
