@@ -14,7 +14,13 @@ body{
 }
 button:hover{
     border-style: solid;    
-    border-color: rgb(194, 194, 194)
+    border-color: grey;
+    border-width: 1px;
+}
+button:focus{
+    border-style: solid;    
+    border-color: blue;
+    border-width: 1px;
 }
 div{
     width: 100%;
@@ -57,17 +63,20 @@ img.redimension-menu{
     background-position: 4px center;
     background-size: 20px;
 }
-.buscador{
-    border: 1px;
-    border-style: solid;
-    border-color: grey;    
+.buscador{    
+    border-style: groove;
+    border-color: rgb(224, 224, 224);
+    border-width: 1px; 
     border-radius: 25px;
     padding: 15px;
     padding-left: 40px;
     padding-right: 40px;
     width: 50%;
 }
-.buscador:hover, :focus{
+.buscador:hover{
+    box-shadow: 1px 1px 5px black;
+}
+.buscador:focus{
     box-shadow: 1px 1px 5px black;
 }
 input.image-buscar {
@@ -102,8 +111,7 @@ footer{
     margin-right: 18%;
     padding: 10px;
     border-radius: 5px;
-    position:absolute;
-       
+    position:absolute;       
 }
 .boton-mesientoconsuerte{
     font-size: 15px;
@@ -127,8 +135,7 @@ footer{
     margin-left: 20px;
     margin-right: 20px;
     flex-wrap: wrap;
-    justify-content: space-evenly;
-    
+    justify-content: space-evenly;    
 }
 .nav-footer-izquierda{    
     flex-basis: fit-content;    
