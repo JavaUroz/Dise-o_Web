@@ -6,16 +6,14 @@ body{
     font-size: 24px;
 }
 img{
-    width: 200px;
-    position: fixed;
+    width: 200px;    
 }
 a{
     color: white;
     text-decoration: none;   
 }
 ul, li{
-    list-style: none;
-     
+    list-style: none;     
 }
 .header{
     display: flex;
@@ -25,26 +23,32 @@ ul, li{
     justify-content: space-between;
     align-items: center;
 }
-
 .logo{
     display: flex;    
-    order: 1;
+    order: 1;    
     align-items: center;
-    /*-ms-flex-order: initial;*/
+    flex-grow: 1;
 }
 .menu{
     display: flex;    
-    order: 2;  
+    order: 2;
+    margin: 0 40px 0 40px;
+    flex-direction: row-reverse;
+    /* flex-direction: row; */
+    flex-grow: 1;
 }
 .menu-items{
     display: flex;
     gap: 40px;
     padding: 0;
+    
 }
 .boton-contacto{
+    display: flex;
     background: rgb(140,48,245);
     background: linear-gradient(90deg, rgba(140,48,245,1) 0%, rgba(242,43,178,1) 50%, rgba(254,154,34,1) 100%);
-    padding: 10px 36px;
+    padding: 10px 36px;    
     border-radius: 40px 0 40px 0;
     order: 3;
+    
 }
