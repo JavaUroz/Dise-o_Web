@@ -1,0 +1,100 @@
+*{
+    /*Pegado de los bordes*/
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    /*Tipografia del proyecto*/    
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    color: #fff;
+}
+
+a{
+    display: flex;
+    /*inherit: Herencia. Hereda el color del padre. En este caso hereda la fuente de body.*/
+    color: inherit;
+    /*Quita el subrayado del texto de a*/
+    text-decoration: none;
+    align-items: center;
+}
+
+.header{
+    background-color: #21252a;
+    height: 80px;
+    /*40px espaciado de los bordes y el contenido del header*/
+    padding: 0 40px;
+    /*elementos del header en formato horizontal*/
+    display: flex;
+    /*espacio entre logo, menu y boton*/
+    gap: 40px;
+    /*distribucion horizontal para que el menu quede centrado y el boton a la derecha*/
+    justify-content: space-between;
+    /*alineacion vertical de los objetos*/
+    align-items: center;
+    margin-bottom: 100px;
+}
+.menu{
+     /*Quitar vinetas (bullets)*/
+     list-style: none;
+     /*lista horizontal*/
+     display: flex;
+     /*espacio entre palabras de la lista. Gap se usa cuando usamos display flex*/
+     gap: 40px;     
+}
+.menu-container-center{
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+}
+
+.menu-container-start{
+    display: flex;
+    flex-grow: 1;
+    justify-content: flex-start;
+}
+
+.menu-container-end{
+    display: flex;
+    flex-grow: 1;
+    justify-content: flex-end;
+}
+
+.submenu-container{
+    display: inline-block;
+    position: relative;
+}
+.submenu{
+    list-style: none;
+    margin-top: 8px;
+    padding: 16px;
+    background-color: #95a;
+    display: none;
+    position: absolute;
+    top: 780px;
+    right: 500px;
+}
+.li-trabajos:hover .submenu{
+    display: block;
+}
+
+.logo-container-order{    
+    order: 1;
+}
+.logo{
+    width: 200px;
+}
+
+.boton{
+    padding: 10px 36px;
+    border-radius: 40px 0 40px 0;
+    /*Degradado hecho en la web https://cssgradient.io/*/
+    background: rgb(140,48,245);
+    background: linear-gradient(90deg, rgba(140,48,245,1) 0%, rgba(242,43,178,1) 50%, rgba(254,154,34,1) 100%);
+}
+.boton-container{
+    display: flex;
+    flex-grow: 1;
+    justify-content: flex-start;
+}
