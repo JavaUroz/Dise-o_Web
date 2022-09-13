@@ -61,10 +61,10 @@ a{
     justify-content: flex-end;
 }
 
-.submenu-container{
-    display: inline-block;
-    position: relative;
-}
+/* .submenu-container{
+    /* display: inline-block; */
+    /* position: relative; 
+} */
 .submenu{
     display: flex;
     gap: 10px;
