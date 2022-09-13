@@ -66,17 +66,26 @@ a{
     position: relative;
 }
 .submenu{
+    display: flex;
+    gap: 10px;
+    opacity: 0;
+    flex-direction: column;
     list-style: none;
-    margin-top: 8px;
-    padding: 16px;
-    background-color: #95a;
-    display: none;
+    /* margin-top: 30px; */
+    padding: 10px;
+    background-color: #95a;    
     position: absolute;
-    top: 780px;
-    right: 500px;
+    top: 50px;
+    left: 0px;
 }
 .li-trabajos:hover .submenu{
-    display: block;
+    /* display: block; */
+    opacity: 1;
+    transition: all 1s cubic-bezier(0.42, 0, 0.3, 2.01);
+}
+
+.li-trabajos{
+    position: relative;
 }
 
 .logo-container-order{    
@@ -85,6 +94,7 @@ a{
 .logo{
     width: 200px;
 }
+
 
 .boton{
     padding: 10px 36px;
